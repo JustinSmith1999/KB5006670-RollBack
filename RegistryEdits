@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"KMPrintersAreBlocked"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint]
+"PackagePointAndPrintServerList"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint\ListofServers]
+"Server1"="Server1"
+"Server1.domain.local"="Server1.domain.local"
+"Server2"="Server2"
+"Server2.domain.local"="Server2.domain.local"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint]
+"RestrictDriverInstallationToAdministrators"=dword:00000000
+"Restricted"=dword:00000001
+"TrustedServers"=dword:00000001
+"ServerList"="Server1;Server1.domain.local;Server2;Server2.domain.local"
+"InForest"=dword:00000001
+"NoWarningNoElevationOnInstall"=dword:00000001
+"UpdatePromptSettings"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print]
+"RpcAuthnLevelPrivacyEnabled"=dword:00000000
